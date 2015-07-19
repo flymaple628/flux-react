@@ -1,5 +1,6 @@
-#Small
-This is a sample project used to illustrate the Flux architecture with React. Checkout the full article [here](http://fancypixel.github.io/blog/2015/01/28/react-plus-flux-backed-by-rails-api/)
+#react-flux
+reference
+[here](http://fancypixel.github.io/blog/2015/01/28/react-plus-flux-backed-by-rails-api/)
 
 ##Setup
 ```
