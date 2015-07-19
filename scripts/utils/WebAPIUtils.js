@@ -1,5 +1,5 @@
 var ServerActionCreators = require('../actions/ServerActionCreators.react.jsx');
-var SConstants = require('../constants/Constants.js');
+var Constants = require('../constants/Constants.js');
 var request = require('superagent');
 
 function _getErrors(res) {
@@ -29,6 +29,7 @@ module.exports = {
             ServerActionCreators.receiveLogin(null, errorMsgs);
           } else {
             json = JSON.parse(res.text);
+            console.log(json);
             ServerActionCreators.receiveSearch(json);
           }
         }

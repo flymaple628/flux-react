@@ -6,7 +6,7 @@ var ActionTypes = Constants.ActionTypes;
 module.exports = {
 
   redirect: function(route) {
-    SmallAppDispatcher.handleViewAction({
+    AppDispatcher.handleViewAction({
       type: ActionTypes.REDIRECT,
       route: route
     });

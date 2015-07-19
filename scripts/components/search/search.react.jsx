@@ -3,11 +3,14 @@ var SearchActionCreators = require('../../actions/SearchActionCreators.react.jsx
 var DepartmentStore = require('../../stores/DepartmentStore.react.jsx');
 var ErrorNotice = require('../../components/common/ErrorNotice.react.jsx');
 
+
 var PostSearchPage = React.createClass({
 
   getInitialState: function() {
+    console.log("PostSearchPage:"+DepartmentStore.getDepartment());
     return {
-      department:  DepartmentStore.getDepartment(),
+      department:  DepartmentStore.getDepartment()
+
     };
   },
 
@@ -32,10 +35,11 @@ var PostSearchPage = React.createClass({
 
   render: function() {
     var department = this.state.department;
-    console.log(department);
+    console.log(department.messages);
 
     return (
       <div>
+        {department}
         <div className="row">
           <div className="card card--login small-10 medium-6 large-4 columns small-centered">
             <form onSubmit={this._onSubmit}>

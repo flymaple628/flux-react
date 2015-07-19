@@ -51,7 +51,7 @@ RouteStore.dispatchToken = AppDispatcher.register(function(payload) {
     // 判斷有沒有登入
     //指定轉向
     case ActionTypes.RECEIVE_SEARCH:
-      router.transitionTo('search_resault');
+      // router.transitionTo('search_resault');
       break;
 
     default:

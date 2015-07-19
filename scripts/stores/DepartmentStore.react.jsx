@@ -41,6 +41,7 @@ DepartmentStore.dispatchToken = AppDispatcher.register(function(payload) {
     case ActionTypes.RECEIVE_SEARCH:
       if (action.json ) {
         _department = action.json;
+        console.log("RECEIVE_SEARCH:"+action.json);
       }
       if (action.errors) {
         _errors = action.errors;
