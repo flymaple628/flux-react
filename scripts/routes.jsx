@@ -11,6 +11,6 @@ module.exports = (
   <Route name="app" path="/" handler={App}>
   	<DefaultRoute handler={Search} />
     <Route name="search" path="/search" handler={Search}/>
-    <Route name="search_resault" path="/seartchResat" handler={SearchResault}/>
+    <Route name="search_resault" path="/search_resault" handler={SearchResault}/>
 	</Route>
 );

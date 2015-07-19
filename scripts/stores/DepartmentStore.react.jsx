@@ -19,7 +19,7 @@ var DepartmentStore = assign({}, EventEmitter.prototype, {
     this.on(CHANGE_EVENT, callback);
   },
 
-  removeChangeListener: function() {
+  removeChangeListener: function(callback) {
     this.removeListener(CHANGE_EVENT, callback);
   },
   //取得所有學系資料
