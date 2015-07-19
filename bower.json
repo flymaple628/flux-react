@@ -1,0 +1,7 @@
+{
+  "name": "carrot-frontend",
+  "version": "0.0.2",
+  "dependencies": {
+    "normalize.css": "~3.0.2"
+  }
+}
